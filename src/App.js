@@ -4,12 +4,12 @@ import './App.css';
 function App() {
   // Random number between 1 and 10
   const [randomNumber] = useState(Math.floor(Math.random() * 10) + 1);
-  const [guess, setGuess] = useState(''); // User guess input
-  const [feedback, setFeedback] = useState(''); // Feedback message
+  const [guess, setGuess] = useState('');
+  const [feedback, setFeedback] = useState(''); 
 
   // Function to handle user input
   const handleGuess = () => {
-    const guessedNumber = parseInt(guess, 10); // Convert guess to a number
+    const guessedNumber = parseInt(guess, 10); 
 
     if (guessedNumber === randomNumber) {
       setFeedback('Correct! You guessed the right number!');
